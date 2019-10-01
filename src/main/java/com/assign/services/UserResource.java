@@ -20,7 +20,7 @@ public class UserResource {
 	@Autowired
 	private IUserBO userBO;
 	
-	@RequestMapping(value = COMMON_SERVICE_PATH + "register", method = RequestMethod.POST)
+	@RequestMapping(value = COMMON_SERVICE_PATH + "searchRepos", method = RequestMethod.POST)
 	public @ResponseBody
 	ProjectsVO register(@RequestBody UserVO userVO){
 		ProjectsVO projectsVO = this.userBO.processPlatforms(userVO);
